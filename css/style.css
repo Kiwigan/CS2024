@@ -77,6 +77,15 @@ ul{
     color: var(--dark-3);
     pointer-events: none;
   }
+
+  /*===========================
+    contact header css 
+===========================*/
+.contact {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: var(--primary-font);
+}
   
   /*===========================
     clients-01 css 
@@ -139,6 +148,7 @@ ul{
   /*===========================
       contact-01 css 
   ===========================*/
+  
   .contact-area {
     padding-top: 50px;
     padding-bottom: 100px;
