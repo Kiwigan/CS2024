@@ -263,7 +263,7 @@ ul{
     border-color: var(--primary);
   }
   .form-input .input-items.default input::placeholder, .form-input .input-items.default textarea::placeholder {
-    color: var(--dark-3);
+    color: #d3d3d3;
     opacity: 1;
   }
   .form-input .input-items.default i {
