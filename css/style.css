@@ -1,6 +1,6 @@
 :root{
     --primary: #C89D65;
-    --c-brand-rgb: 78, 87, 212;
+    --c-brand-rgb: 0, 0, 0;
     --primary-dark: #a7732f;
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Heebo", serif;
@@ -51,7 +51,7 @@ ul{
 
     #hero {
       background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), 
-                  url(assets/images/hero.png);
+                  url(assets/images/knowledge.jpg);
       background-position: center;
       background-size: cover;
       height: 100vh; /* Ensures full height */
