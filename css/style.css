@@ -1,6 +1,8 @@
 :root{
     --primary: #C89D65;
     --primary-dark: #a87b3f;
+    --primary-font: "Playfair Display", serif;
+    --secondary-font: "Heebo", serif;
 }
 /*
 .navbar-area{
@@ -11,6 +13,8 @@
     z-index: 1000;
 }
 */
+
+
 .nav-bar{
     background-color: #C89D65;
 }
@@ -19,10 +23,17 @@
     margin: 0em 1.2em;
   }
 
-.nav-item a{
+.nav-item a {
     font-size: 20px;
     font-weight: 600; 
+    font-family: var(--primary-font);
+    color: var(--white);
 }
+
+.nav-item a:hover {
+  color: var(--dark-4);
+}
+
 ul{
     display: block;
     list-style-type: disc;
@@ -504,4 +515,21 @@ ul{
   .footer-one .social li a:hover {
     color: var(--primary);
   }
+
+/*===== ABOUT US =====*/
+  .about-us {
+    margin-top: 40px; /* Adjust the value as needed */
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+.line {
+  display: inline-block; /* Make it inline to appear next to the text */
+  width: 8%; /* Adjust this value for desired length */
+  height: 2px; /* Thickness of the line */
+  background-color: var(--black); /* Color of the line */
+  vertical-align: middle; /* Aligns the line vertically with the text */
+}
+
+
+
 
