@@ -51,7 +51,7 @@ ul{
 
     #hero {
       background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), 
-                  url(https://images.pexels.com/photos/210592/pexels-photo-210592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); /* Correct way */
+                  url(https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); /* Correct way */
       background-position: center;
       background-size: cover;
       height: 70vh; /* Ensures full height */
