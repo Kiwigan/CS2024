@@ -20,18 +20,18 @@
     background-color: #C89D65;
 }
 
-.nav-item{
+.header-item{
     margin: 0em 1.2em;
   }
 
-.nav-item a {
+.header-item a {
     font-size: 20px;
     font-weight: 600; 
     font-family: var(--primary-font);
     color: var(--white);
 }
 
-.nav-item a:hover {
+.header-item a:hover {
   color: var(--dark-4);
 }
 
@@ -762,4 +762,95 @@ ul{
 
 .team-title  {
   font-family: var(--primary-font);
+}
+
+/*===========================
+tabs-one
+===========================*/
+
+/* tabs-two */
+@media (max-width: 767px) {
+  .tabs-two .nav {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav {
+    display: flex;
+  }
+}
+.tabs-two .nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-3);
+  font-weight: 700;
+  padding: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+  border-bottom: 1px solid var(--gray-4);
+  position: relative;
+}
+.tabs-two .nav .nav-item a.active {
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--gray-4);
+  border-bottom: 0;
+  border-top: 0;
+}
+@media (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tabs-two .nav .nav-item a.active {
+    border: 1px solid var(--gray-4);
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
+.tabs-two .nav .nav-item a.active::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  background: var(--primary);
+}
+.tabs-two .nav .nav-item:first-child a.active {
+  border-left: 0;
+}
+.tabs-two .nav .nav-item:last-child a.active {
+  border-right: 0;
+}
+.tabs-two .tab-content .tab-text {
+  padding: 15px;
+}
+.tabs-two .tab-content .tab-text .text {
+  color: var(--dark-3);
+}
+
+
+.feature-icon {
+  background-color: var(--primary);
+  width: 4rem;
+  height: 4rem;
+}
+
+.feature-icon i {
+  color: white;
+}
+
+.features-text{
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 600;
 }
