@@ -1,6 +1,7 @@
 :root{
     --primary: #C89D65;
-    --primary-dark: #a87b3f;
+
+    --primary-dark: #a7732f;
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Heebo", serif;
 }
@@ -46,14 +47,28 @@ ul{
     list-style-type: none;
     }
 
+
+
 /* ===== Buttons Css ===== */
+
+.primary-btn {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow-2);
+}
+.active.primary-btn, .primary-btn:hover, .primary-btn:focus {
+    background: var(--primary-dark);
+    color: var(--white);
+    box-shadow: var(--shadow-4);
+}
+
 .contact-form .single-form .input-form .primary-btn {
-    background: #C89D65;
+    background: var(--primary);
     color: var(--white);
     box-shadow: var(--shadow-2);
   }
   .contact-form .single-form .input-form .active.primary-btn, .contact-form .single-form .input-form .primary-btn:hover, .contact-form .single-form .input-form .primary-btn:focus {
-    background: #a87b3f;
+    background: var(--primary-dark);
     color: var(--white);
     box-shadow: var(--shadow-4);
   }
@@ -120,6 +135,88 @@ ul{
   .client-logo-one .single-client {
     margin-top: 30px;
   }
+
+
+/*===========================
+  teams css 
+===========================*/
+.team-style-one {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one:hover {
+  box-shadow: var(--shadow-4);
+}
+.team-style-one .team-image img {
+  width: 100%;
+}
+.team-style-one .team-content {
+  padding: 20px 15px;
+  width: 100%;
+  background-color: var(--white);
+}
+.team-style-one .team-content .name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-one .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-one .team-content .sub-title {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-one .team-content .social {
+  margin-top: 12px;
+}
+.team-style-one .team-content .social li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.team-style-one .team-content .social li a {
+  font-size: 16px;
+  color: var(--gray-1);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid var(--gray-4);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one .team-content .social li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+
+
+
+
   /*===========================
       contact-01 css 
   ===========================*/
