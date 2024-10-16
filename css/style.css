@@ -547,6 +547,73 @@ ul{
     color: var(--primary);
   }
 
+  /*===========================
+  knowledge css 
+===========================*/
+
+.knowledge {
+  position: relative; /* Set position to relative for the overlay */
+  background-image: url('../assets/images/knowledge.jpg');
+  background-size: cover; /* This ensures the image covers the entire section */
+  background-position: center; /* This centers the image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  height: 120vh; /* Adjust height as needed */
+  overflow: hidden; /* Ensure no overflow from the overlay */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.knowledge::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute; /* Position it absolutely within the .knowledge section */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with 70% opacity */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+.container {
+  position: relative; /* Ensure the content sits above the overlay */
+  z-index: 2; /* Higher than the overlay */
+}
+
+.knowledge-title , .knowledge-sub-title{
+  font-family: var(--primary-font);
+  color: var(--light-2);
+  margin-bottom: 2%;
+}
+
+.knowledge .container p {
+  color: var(--light-2);
+  font-weight: 200;
+}
+
+.knowledge-line {
+  display: inline-block; /* Make it inline to appear next to the text */
+  width: 100%; /* Adjust this value for desired length */
+  height: 0.5px; /* Slightly increase thickness to keep it visible */
+  background-color: var(--light-2); /* Color of the line */
+  vertical-align: middle; /* Aligns the line vertically with the text */
+  margin-top: 2%; /* Space above the line */
+  margin-bottom: 4%; /* Space below the line */
+}
+
+.knowledge-sub-line {
+  display: block; /* Make it a block element */
+  width: 20%; /* Adjust the width as needed */
+  height: 0.05px; /* Thickness of the line */
+  background-color: var(--white); /* Color of the line */
+  margin-top: 1%; /* Add top margin */
+  margin-bottom: 4%; /* Add bottom margin */
+}
+
+
+.first-row {
+  margin-bottom: 7%;
+}
+
 /*===========================
   about us css 
 ===========================*/
