@@ -136,87 +136,6 @@ ul{
     margin-top: 30px;
   }
 
-
-/*===========================
-  teams css 
-===========================*/
-.team-style-one {
-  position: relative;
-  margin-top: 30px;
-  box-shadow: var(--shadow-2);
-  border-radius: 8px;
-  overflow: hidden;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-.team-style-one:hover {
-  box-shadow: var(--shadow-4);
-}
-.team-style-one .team-image img {
-  width: 100%;
-}
-.team-style-one .team-content {
-  padding: 20px 15px;
-  width: 100%;
-  background-color: var(--white);
-}
-.team-style-one .team-content .name {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: var(--black);
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-style-one .team-content .name {
-    font-size: 20px;
-  }
-}
-.team-style-one .team-content .sub-title {
-  font-size: 15px;
-  line-height: 24px;
-  color: var(--dark-3);
-  margin-top: 2px;
-  display: block;
-}
-.team-style-one .team-content .social {
-  margin-top: 12px;
-}
-.team-style-one .team-content .social li {
-  display: inline-block;
-  margin: 0 4px;
-}
-.team-style-one .team-content .social li a {
-  font-size: 16px;
-  color: var(--gray-1);
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  line-height: 38px;
-  border: 1px solid var(--gray-4);
-  border-radius: 50%;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-.team-style-one .team-content .social li a:hover {
-  background-color: var(--primary);
-  color: var(--white);
-  border-color: transparent;
-}
-
-
-
-
   /*===========================
       contact-01 css 
   ===========================*/
@@ -613,10 +532,31 @@ ul{
     color: var(--primary);
   }
 
-/*===== ABOUT US =====*/
-  .about-us {
+/*===========================
+  about us css 
+===========================*/
+.about-us {
     margin-top: 40px; /* Adjust the value as needed */
     margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+.tagline {
+  color: #A05C03;
+  font-family: var(--primary-font);
+  font-size: 170%;
+  margin-bottom: 8%;
+}
+
+.about-desc {
+  font-size: 110%;
+}
+
+.about-row{
+  margin-top: 3%;
+}
+
+.about-title {
+  font-family: var(--primary-font);
 }
 
 .line {
@@ -627,6 +567,119 @@ ul{
   vertical-align: middle; /* Aligns the line vertically with the text */
 }
 
+.image-container {
+  position: relative;
+  width: 700px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+}
+
+.rectangle {
+  position: absolute;
+  top: 6.5%; /* Adjust as needed to align with the image */
+  left: -4.5%; /* Adjust as needed to align with the image */
+  width: 90%; /* Rectangle width */
+  height: 76.5%; /* Rectangle height */
+  background-color: #D1BDA3; /* Rectangle color */
+  z-index: 0; /* Behind the image */
+}
+
+.image-on-rectangle {
+  position: relative;
+  width: 90%; /* Adjust image size as needed */
+  height: auto;
+  z-index: 1; /* On top of the rectangle */
+}
+
+/*===========================
+  teams css 
+===========================*/
+.team-style-one {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one:hover {
+  box-shadow: var(--shadow-4);
+}
+.team-style-one .team-image img {
+  width: 100%;
+}
+.team-style-one .team-content {
+  padding: 20px 15px;
+  width: 100%;
+  background-color: var(--white);
+}
+.team-style-one .team-content .name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-one .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-one .team-content .sub-title {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-one .team-content .social {
+  margin-top: 12px;
+}
+.team-style-one .team-content .social li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.team-style-one .team-content .social li a {
+  font-size: 16px;
+  color: var(--gray-1);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid var(--gray-4);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one .team-content .social li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.team-desc {
+  margin-top: 2%;
+}
+
+.team-area {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: var(--gray-4);
+}
+
+.team-title  {
+  font-family: var(--primary-font);
+}
 
 
 
