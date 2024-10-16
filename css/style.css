@@ -77,10 +77,23 @@ ul{
     color: var(--dark-3);
     pointer-events: none;
   }
+
+  /*===========================
+    contact header css 
+===========================*/
+.contact {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: var(--primary-font);
+}
   
   /*===========================
     clients-01 css 
 ===========================*/
+.client-logo-area{
+  background-color: var(--gray-4);
+}
+
 .client-logo-area .section-title-two {
     text-align: center;
     max-width: 550px;
@@ -89,6 +102,7 @@ ul{
     position: relative;
     z-index: 5;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .client-logo-area .section-title-two {
       margin-bottom: 45px;
@@ -136,90 +150,10 @@ ul{
     margin-top: 30px;
   }
 
-
-/*===========================
-  teams css 
-===========================*/
-.team-style-one {
-  position: relative;
-  margin-top: 30px;
-  box-shadow: var(--shadow-2);
-  border-radius: 8px;
-  overflow: hidden;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-.team-style-one:hover {
-  box-shadow: var(--shadow-4);
-}
-.team-style-one .team-image img {
-  width: 100%;
-}
-.team-style-one .team-content {
-  padding: 20px 15px;
-  width: 100%;
-  background-color: var(--white);
-}
-.team-style-one .team-content .name {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  color: var(--black);
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .team-style-one .team-content .name {
-    font-size: 20px;
-  }
-}
-.team-style-one .team-content .sub-title {
-  font-size: 15px;
-  line-height: 24px;
-  color: var(--dark-3);
-  margin-top: 2px;
-  display: block;
-}
-.team-style-one .team-content .social {
-  margin-top: 12px;
-}
-.team-style-one .team-content .social li {
-  display: inline-block;
-  margin: 0 4px;
-}
-.team-style-one .team-content .social li a {
-  font-size: 16px;
-  color: var(--gray-1);
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  line-height: 38px;
-  border: 1px solid var(--gray-4);
-  border-radius: 50%;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-.team-style-one .team-content .social li a:hover {
-  background-color: var(--primary);
-  color: var(--white);
-  border-color: transparent;
-}
-
-
-
-
   /*===========================
       contact-01 css 
   ===========================*/
+  
   .contact-area {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -613,10 +547,98 @@ ul{
     color: var(--primary);
   }
 
-/*===== ABOUT US =====*/
-  .about-us {
+  /*===========================
+  knowledge css 
+===========================*/
+
+.knowledge {
+  position: relative; /* Set position to relative for the overlay */
+  background-image: url('../assets/images/knowledge.jpg');
+  background-size: cover; /* This ensures the image covers the entire section */
+  background-position: center; /* This centers the image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  height: 120vh; /* Adjust height as needed */
+  overflow: hidden; /* Ensure no overflow from the overlay */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.knowledge::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute; /* Position it absolutely within the .knowledge section */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with 70% opacity */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+.container {
+  position: relative; /* Ensure the content sits above the overlay */
+  z-index: 2; /* Higher than the overlay */
+}
+
+.knowledge-title , .knowledge-sub-title{
+  font-family: var(--primary-font);
+  color: var(--light-2);
+  margin-bottom: 2%;
+}
+
+.knowledge .container p {
+  color: var(--light-2);
+  font-weight: 200;
+}
+
+.knowledge-line {
+  display: inline-block; /* Make it inline to appear next to the text */
+  width: 100%; /* Adjust this value for desired length */
+  height: 0.5px; /* Slightly increase thickness to keep it visible */
+  background-color: var(--light-2); /* Color of the line */
+  vertical-align: middle; /* Aligns the line vertically with the text */
+  margin-top: 2%; /* Space above the line */
+  margin-bottom: 4%; /* Space below the line */
+}
+
+.knowledge-sub-line {
+  display: block; /* Make it a block element */
+  width: 20%; /* Adjust the width as needed */
+  height: 0.05px; /* Thickness of the line */
+  background-color: var(--white); /* Color of the line */
+  margin-top: 1%; /* Add top margin */
+  margin-bottom: 4%; /* Add bottom margin */
+}
+
+
+.first-row {
+  margin-bottom: 7%;
+}
+
+/*===========================
+  about us css 
+===========================*/
+.about-us {
     margin-top: 40px; /* Adjust the value as needed */
     margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+.tagline {
+  color: #A05C03;
+  font-family: var(--primary-font);
+  font-size: 170%;
+  margin-bottom: 8%;
+}
+
+.about-desc {
+  font-size: 110%;
+}
+
+.about-row{
+  margin-top: 3%;
+}
+
+.about-title {
+  font-family: var(--primary-font);
 }
 
 .line {
@@ -627,6 +649,119 @@ ul{
   vertical-align: middle; /* Aligns the line vertically with the text */
 }
 
+.image-container {
+  position: relative;
+  width: 700px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+}
+
+.rectangle {
+  position: absolute;
+  top: 6.5%; /* Adjust as needed to align with the image */
+  left: -4.5%; /* Adjust as needed to align with the image */
+  width: 90%; /* Rectangle width */
+  height: 76.5%; /* Rectangle height */
+  background-color: #D1BDA3; /* Rectangle color */
+  z-index: 0; /* Behind the image */
+}
+
+.image-on-rectangle {
+  position: relative;
+  width: 90%; /* Adjust image size as needed */
+  height: auto;
+  z-index: 1; /* On top of the rectangle */
+}
+
+/*===========================
+  teams css 
+===========================*/
+.team-style-one {
+  position: relative;
+  margin-top: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one:hover {
+  box-shadow: var(--shadow-4);
+}
+.team-style-one .team-image img {
+  width: 100%;
+}
+.team-style-one .team-content {
+  padding: 20px 15px;
+  width: 100%;
+  background-color: var(--white);
+}
+.team-style-one .team-content .name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-style-one .team-content .name {
+    font-size: 20px;
+  }
+}
+.team-style-one .team-content .sub-title {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--dark-3);
+  margin-top: 2px;
+  display: block;
+}
+.team-style-one .team-content .social {
+  margin-top: 12px;
+}
+.team-style-one .team-content .social li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.team-style-one .team-content .social li a {
+  font-size: 16px;
+  color: var(--gray-1);
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid var(--gray-4);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.team-style-one .team-content .social li a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.team-desc {
+  margin-top: 2%;
+}
+
+.team-area {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: var(--gray-4);
+}
+
+.team-title  {
+  font-family: var(--primary-font);
+}
 
 /*===========================
 tabs-one
