@@ -1,6 +1,6 @@
 :root{
     --primary: #C89D65;
-    --c-brand-rgb: 0, 0, 0;
+    --c-brand-rgb: 56, 43, 22;
     --primary-dark: #a7732f;
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Heebo", serif;
@@ -51,11 +51,22 @@ ul{
 
     #hero {
       background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), 
-                  url(assets/images/hero.png);
+                  url(https://images.pexels.com/photos/210592/pexels-photo-210592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); /* Correct way */
       background-position: center;
       background-size: cover;
-      height: 100vh; /* Ensures full height */
+      height: 70vh; /* Ensures full height */
+  }
 
+  #hero h1 {
+    font-family: var(--primary-font);
+    color: var(--light-2);
+    font-size: 200%;
+  }
+  
+  #hero h5 {
+    color: var(--light-2);
+    font-weight: 200;
+    font-size: 100%;
   }
   
 /* ===== Buttons Css ===== */
