@@ -56,6 +56,19 @@ ul{
       background-size: cover;
 
   }
+
+  .carousel-item p, .carousel-item i {
+    color: rgba(255,250,250, 0.5);
+  }
+
+  .carousel-item p {
+    margin-top: 5%;
+  }
+
+  .carousel-item p:hover {
+    text-decoration: underline;
+  }
+
 .overlay {
     position: absolute;
     top: 0;
