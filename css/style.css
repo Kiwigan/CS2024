@@ -1,9 +1,11 @@
 :root{
     --primary: #C89D65;
-    --c-brand-rgb: 56, 43, 22;
+    /*--c-brand-rgb: 56, 43, 22;*/
+    --c-brand-rgb: 44, 33, 18;
     --primary-dark: #a7732f;
     --primary-font: "Playfair Display", serif;
     --secondary-font: "Heebo", serif;
+    /*--test: #2e2312;*/
 }
 /*
 .navbar-area{
@@ -39,7 +41,7 @@ ul{
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
-    margin-block-end: 1em;
+    /*margin-block-end: 1em;*/
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
@@ -49,8 +51,9 @@ ul{
 
 
 
+    
     #hero {
-      background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), 
+      background: linear-gradient(rgba(var(--c-brand-rgb), 0.657), rgba(var(--c-brand-rgb), 0.438)), 
                   url(https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); /* Correct way */
       background-position: center;
       background-size: cover;
@@ -61,13 +64,15 @@ ul{
     font-family: var(--primary-font);
     color: var(--light-2);
     font-size: 200%;
+    font-weight: 700 ;
   }
   
   #hero h5 {
     color: var(--light-2);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 100%;
   }
+  
   
 /* ===== Buttons Css ===== */
 
@@ -565,6 +570,10 @@ ul{
   }
   .footer-one .social li a:hover {
     color: var(--primary);
+  }
+
+  .social{
+    margin-top: 10px;
   }
 
   /*===========================
