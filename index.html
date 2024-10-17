@@ -28,21 +28,31 @@
     <section class="contact bg-dark">
         <div class="container flex-wrap">
             <div class="row text-white">
-                <div class="col-lg-5 text-md-start">
-                    <!--img src="assets/icons/location.png" alt="location"-->
-                    <i class="bi bi-geo-alt-fill"> &nbsp 1 North Bridge Road, High Street Centre, #19-04/05, Singapore - 179094</i>
+                <div class="col-lg-5 text-md-center">
+                    <i class="bi bi-geo-alt-fill">
+                        <a href="https://www.google.com/maps/search/?api=1&query=1+North+Bridge+Road,+High+Street+Centre,+#19-04/05,+Singapore+179094" target="_blank" class="contact-link">
+                            &nbsp;1 North Bridge Road, High Street Centre, #19-04/05, Singapore 179094
+                        </a>
+                    </i>
                 </div>
                 <div class="col-lg-4 text-md-center">
-                    <!--img src="assets/icons/mail.png" alt="mail"-->
-                    <i class="bi bi-envelope-fill"> &nbsp pinnacle.accountants@llp.com</i>
+                    <i class="bi bi-envelope-fill">
+                        <a href="mailto:pinnacle.accountants@llp.com" class="contact-link">
+                            &nbsp;pinnacle.accountants@llp.com
+                        </a>
+                    </i>
                 </div>
-                <div class="col-lg-3 text-md-end">
-                    <!--img src="assets/icons/phone.png" alt="phone"-->
-                    <i class="bi bi-telephone-fill"> &nbsp +65 6789 8901</i>
+                <div class="col-lg-3 text-md-center">
+                    <i class="bi bi-telephone-fill">
+                        <a href="tel:+6567898901" class="contact-link">
+                            &nbsp;+65 6789 8901
+                        </a>
+                    </i>
                 </div>
             </div>
         </div>
     </section>
+    
     <section class="navbar-area navbar-one" style="background-color: #C89D65;">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3">
@@ -61,20 +71,33 @@
     </section>
 
 
-    <!--====== HERO IMAGE PART START ======-->
+    <!--====== HERO IMAGE PART START ======-->    
     <section id="hero" class="d-flex align-items-center text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 data-aos="fade-left" class="fw-semibold display-1">Guiding Your Financial Journey with Precision</h1>
-                    <h5 class="mt-3 mb-4" data-aos="fade-right">Your trusted partner in accounting, taxation, auditing, and corporate secretarial services. <br>
-                        We simplify financial management to help your business thrive</h5>
-                </div>
-                
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 data-aos="fade-left" class="fw-semibold display-1">Supporting Firms in Attaining Their Peak Potential</h1>
+                    <h5 class="mt-3 mb-4" data-aos="fade-right">Your dedicated partner in navigating the complexities of accounting, taxation, auditing, and corporate secretarial services. <br>
+                    </div>
+                <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="...">
+                <div class="overlay"></div>
             </div>
-        </div>
-    </section>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+
+                <h1 data-aos="fade-left" class="fw-semibold display-1">Dedicated to Deliver Customized Solutions to You</h1>
+                    <h5 class="mt-3 mb-4" data-aos="fade-right">We strive for excellence in every service, ensuring our clients reach their goals.<br>
+                </div>
+                                        <img src="https://images.pexels.com/photos/17690067/pexels-photo-17690067/free-photo-of-view-of-a-modern-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100" alt="...">
+                                        <div class="overlay"></div>
+              </div>
+            </div>
+            
+          </div>
+          </section>
     <!--====== HERO IMAGE PART END ======-->
+
     <section class="sub-hero"></section>
         <div class="px-4 py-5 my-5 text-center">
             <img class="d-block mx-auto mb-4" src="assets/logo/logo.png" alt="" width="140px">
@@ -153,7 +176,7 @@
                     <p>Expertise in ensuring businesses meet all regulatory requirements from IRAS (Inland Revenue Authority of Singapore) and ACRA (Accounting and Corporate Regulatory Authority).</p>
                 </div>
                 <div class="col-lg-4 col-md-6 d-flex flex-column text-start"> <!-- Removed align-items-center -->
-                    <h5 class="knowledge-sub-title">Accounting and Taxation Services</h5>
+                    <h5 class="knowledge-sub-title">Holistic Financial Wellness</h5>
                     <div class="knowledge-sub-line"></div>
                     <p>Strategic tax planning tailored to each client's unique needs, ensuring maximum profitability while remaining compliant with tax laws.</p>
                 </div>
@@ -460,14 +483,16 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <!-- Start Footer Contact -->
                     <div class="footer-contact">
-                    <h6 class="footer-title">Help & Support</h6>
-                    <ul>
-                        <li><i class="lni lni-map-marker"></i> 1 North Bridge Road, High Street Centre, #19-04/05, Singapore - 179094</li>
-                        <li><i class="lni lni-phone-set"></i> +65 6789 8901</li>
-                        <li><i class="lni lni-envelope"></i> pinnacle.accountants@llp.com</li>
-                    </ul>
-                    </div>
-                    <!-- End Footer Contact -->
+                        <h6 class="footer-title">Help & Support</h6>
+                        <ul>
+                            <li>
+                                <i class="lni lni-map-marker"></i> 1 North Bridge Road, High Street Centre, #19-04/05, Singapore 179094
+                            </li>
+                            <li><i class="lni lni-phone-set"></i> +65 6789 8901</li>
+                            <li><i class="lni lni-envelope"></i> pinnacle.accountants@llp.com</li>
+                        </ul>
+                        </div>
+                        <!-- End Footer Contact -->
                 </div>
             </div>
             <!-- row -->
@@ -488,7 +513,7 @@
                     align-items-center
                     "
                     >
-                    <p class="text text-white">Copyright © 2024 <i>Keegan, Puimun.</i> All Rights Reserved</p>
+                    <p class="text text-white">Copyright © 2024 <i>Pinnacle.</i> All Rights Reserved</p>
                     <ul class="social">
                         <li>
                             <a href="javascript:void(0)">
@@ -512,6 +537,10 @@
         <!-- footer copyright -->
     </footer>
     <!--====== FOOTER ONE PART ENDS ======-->
+    
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

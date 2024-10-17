@@ -49,22 +49,35 @@ ul{
     list-style-type: none;
     }
 
-
-
-    
-    #hero {
-      background: linear-gradient(rgba(var(--c-brand-rgb), 0.657), rgba(var(--c-brand-rgb), 0.438)), 
-                  url(https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); /* Correct way */
-      background-position: center;
+  
+  .carousel-item {
+      position: relative;
+      height: 70vh; /* Ensure all slides maintain the same height */
       background-size: cover;
-      height: 70vh; /* Ensures full height */
+
   }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 31, 2, 0.6); /* Black overlay with 70% opacity */
+    z-index: 1;
+}
+.carousel-caption {
+    top: 8%;
+    bottom: auto;
+    z-index: 2;
+
+}
 
   #hero h1 {
     font-family: var(--primary-font);
     color: var(--light-2);
     font-size: 200%;
     font-weight: 700 ;
+    justify-content: flex-start;
   }
   
   #hero h5 {
@@ -111,6 +124,23 @@ ul{
   padding-bottom: 1%;
   font-family: var(--primary-font);
 }
+
+.row {
+  display: flex; /* Use flexbox for even spacing */
+  justify-content: space-between; /* Space out the columns evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.contact-link {
+  color: white; /* Text color for links */
+  text-decoration: none; /* Remove underline by default */
+  transition: text-decoration 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
   
   /*===========================
     clients-01 css 
@@ -790,7 +820,7 @@ accounting services
   background-size: cover; /* This ensures the image covers the entire section */
   background-position: center; /* This centers the image */
   background-repeat: no-repeat; /* This prevents the image from repeating */
-  height: 50vh; /* Adjust height as needed */
+  height: 40vh; /* Adjust height as needed */
   overflow: hidden; /* Ensure no overflow from the overlay */
   display: flex;
   justify-content: center; /* Horizontally centers the content */
@@ -889,6 +919,29 @@ accounting services
 }
 .tabs-two .tab-content .tab-text .text {
   color: var(--dark-3);
+}
+
+/* Ensure the image fills its container within the tabs */
+.tabs-two .tab-content img {
+  width: 100%; /* Set the image to take the full width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  max-height: 500px; /* Set a maximum height, adjust as needed */
+  object-fit: cover; /* Ensures the image fills the area without stretching */
+  display: block; /* Prevents inline images from having extra spacing */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* You can specify exact dimensions if necessary */
+.tabs-two .tab-content .image-container {
+  width: 300px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  overflow: hidden; /* Ensures that the image doesn't overflow outside the container */
+}
+
+.tabs-two .tab-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
 }
 
 
