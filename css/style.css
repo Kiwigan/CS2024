@@ -124,6 +124,23 @@ ul{
   padding-bottom: 1%;
   font-family: var(--primary-font);
 }
+
+.row {
+  display: flex; /* Use flexbox for even spacing */
+  justify-content: space-between; /* Space out the columns evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.contact-link {
+  color: white; /* Text color for links */
+  text-decoration: none; /* Remove underline by default */
+  transition: text-decoration 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
   
   /*===========================
     clients-01 css 
