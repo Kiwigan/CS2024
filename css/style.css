@@ -654,11 +654,79 @@ ul{
   margin-top: 1%; /* Add top margin */
   margin-bottom: 4%; /* Add bottom margin */
 }
-
-
 .first-row {
   margin-bottom: 7%;
+  display: flex; /* Use flexbox for row alignment */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Even spacing between columns */
+  padding-left: 15px; /* Ensure it aligns with the main margin */
+  padding-right: 15px; /* Ensure it aligns with the main margin */
 }
+
+/* Ensure each column takes equal space and aligns to the top */
+.first-row .col-lg-4, .first-row .col-md-6 {
+  padding: 0; /* Set padding to 0 for columns */
+  display: flex; /* Enable flex on the column for internal content alignment */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: flex-start; /* Align items to the top of the column */
+  flex: 1; /* Allow equal spacing */
+  margin: 0; /* Remove margin */
+}
+
+/* Title and subtitle styling */
+.knowledge-title, .knowledge-sub-title {
+  font-family: var(--primary-font);
+  color: var(--light-2);
+  margin-bottom: 2%;
+}
+
+.knowledge-sub-line {
+  display: block; /* Make it a block element */
+  width: 20%; /* Adjust the width as needed */
+  height: 0.05px; /* Thickness of the line */
+  background-color: var(--white); /* Color of the line */
+  margin-top: 1%; /* Add top margin */
+  margin-bottom: 4%; /* Add bottom margin */
+}
+
+/* Read more link styling */
+.read-more {
+  margin-top: auto; /* Align it to the bottom of the column */
+  color: var(--light-2); /* Color for the link */
+  font-weight: 300; /* Make it bold */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Flexbox for aligning text and arrow */
+  align-items: center; /* Center vertically */
+}
+
+/* Specific styles for the Knowledge & Experience section */
+.knowledge .row-cols-auto .col-lg-3 i {
+    font-size: 40px; /* Fixed size for icons */
+    color: var(--light-2); /* Make icons white */
+}
+
+.knowledge .row-cols-auto .col-lg-9 h2, 
+.knowledge .row-cols-auto .col-lg-9 p {
+    color: var(--light-2); /* Make text white */
+}
+
+/* Maintain spacing and structure for the icons and text */
+.knowledge .row-cols-auto .col-lg-9 h2 {
+    font-size: 2rem; /* Font size for headings */
+    font-weight: 700; /* Make headings bold */
+}
+
+.knowledge .row-cols-auto .col-lg-9 p {
+    font-size: 1rem; /* Font size for text */
+    font-weight: 300; /* Set font weight for normal text */
+}
+
+.knowledge .row {
+    margin-bottom: 7%; /* Ensure proper margin between rows */
+    padding-left: 15px; /* Align with the section's main margin */
+    padding-right: 15px; /* Align with the section's main margin */
+}
+
 
 /*===========================
   about us css 
