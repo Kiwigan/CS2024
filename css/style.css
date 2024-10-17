@@ -1161,3 +1161,21 @@ accounting services
   margin-top: 10px; /* Space between title and line */
   margin-bottom: 15px; /* Space between line and text */
 }
+
+
+/*Rating and reviews*/
+
+.card{
+  box-shadow: #555;
+}
+
+.user-content p{
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+.ratings i{
+  color: var(--primary);
+}
+
