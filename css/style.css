@@ -693,11 +693,26 @@ ul{
 .read-more {
   margin-top: auto; /* Align it to the bottom of the column */
   color: var(--light-2); /* Color for the link */
-  font-weight: 300; /* Make it bold */
+  font-weight: 600; /* Make it bold */
   text-decoration: none; /* Remove underline */
   display: flex; /* Flexbox for aligning text and arrow */
   align-items: center; /* Center vertically */
 }
+
+.read-more i {
+  margin-left: 5px; /* Space between text and icon */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.read-more:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: var(--primary); /* Change color on hover */
+}
+
+.read-more:hover i {
+  transform: translateX(5px); /* Move the arrow slightly on hover */
+}
+
 
 /* Specific styles for the Knowledge & Experience section */
 .knowledge .row-cols-auto .col-lg-3 i {
@@ -1028,4 +1043,90 @@ accounting services
   color: var(--primary);
   font-size: 20px;
   font-weight: 600;
+}
+
+/* Mission and Vision Section Styling */
+.mission-vision {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  color: var(--light-2); /* Light text for contrast */
+  padding: 5% 0; /* Padding to give some vertical space */
+  z-index: 1; /* Ensure content is layered correctly */
+}
+
+.mission-vision .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+  z-index: 2; /* Overlay sits just above the background image */
+}
+
+.mission-vision .container {
+  position: relative; 
+  z-index: 3; /* Ensure container sits above the overlay */
+}
+
+/* Ensure both sections are aligned properly */
+.mission-vision-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns both sections at the top */
+  padding: 50px;
+}
+
+/* Ensure each section takes the same height */
+.mission-vision-container {
+  flex: 1; /* Each takes equal space */
+  display: flex; /* Allow flex properties for inner alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items at the top */
+  padding: 0 20px; /* Optional: Add horizontal padding */
+}
+
+/* Aligning the title and line in the same row */
+.mission-row, .vision-row {
+  display: flex;
+  align-items: center; /* Center the icon and title vertically */
+}
+
+.mission-title, .vision-title {
+  font-family: var(--primary-font);
+  color: var(--light-2);
+  margin-left: 10px; /* Add some space between icon and title */
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.mission-vision p {
+  color: var(--light-2);
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 10px; /* Space above the paragraph */
+  font-size: 1rem;
+}
+
+/* Icon and Title styling */
+.icon-title {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Space between the icon and text */
+}
+
+.icon-title i {
+  font-size: 2rem; /* Consistent icon size */
+  color: var(--light-2);
+  margin-right: 10px; /* Space between icon and title */
+}
+
+.mission-line, .vision-line {
+  width: 100%; /* Full width line */
+  height: 1px; /* Line thickness */
+  background-color: var(--light-2); /* Line color */
+  margin-top: 10px; /* Space between title and line */
+  margin-bottom: 15px; /* Space between line and text */
 }
