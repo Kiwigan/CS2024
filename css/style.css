@@ -960,3 +960,20 @@ accounting services
   font-size: 20px;
   font-weight: 600;
 }
+
+
+/*Rating and reviews*/
+
+.card{
+  box-shadow: #555;
+}
+
+.user-content p{
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+.ratings i{
+  color: var(--primary);
+}
