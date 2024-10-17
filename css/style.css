@@ -781,7 +781,7 @@ accounting services
   background-size: cover; /* This ensures the image covers the entire section */
   background-position: center; /* This centers the image */
   background-repeat: no-repeat; /* This prevents the image from repeating */
-  height: 50vh; /* Adjust height as needed */
+  height: 40vh; /* Adjust height as needed */
   overflow: hidden; /* Ensure no overflow from the overlay */
   display: flex;
   justify-content: center; /* Horizontally centers the content */
