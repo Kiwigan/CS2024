@@ -17,24 +17,31 @@
 }
 */
 
-
-.nav-bar{
-    background-color: #C89D65;
+.nav-bar {
+  background-color: #C89D65;
 }
 
-.header-item{
-    margin: 0em 1.2em;
-  }
+.header-item {
+  margin: 0em 1.2em;
+}
 
-.header-item a {
-    font-size: 20px;
-    font-weight: 600; 
-    font-family: var(--primary-font);
-    color: var(--white);
+.header-item a , .nav-link a{
+  font-size: 20px;
+  font-weight: 600; 
+  font-family: var(--primary-font);
+  color: var(--white);
 }
 
 .header-item a:hover {
   color: var(--dark-4);
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color:#C89D65;
 }
 
 ul{
@@ -54,6 +61,7 @@ ul{
       position: relative;
       height: 70vh; /* Ensure all slides maintain the same height */
       background-size: cover;
+      width: 100%;
 
   }
 
@@ -97,6 +105,10 @@ ul{
     color: var(--light-2);
     font-weight: 400;
     font-size: 100%;
+  }
+
+  #hero {
+    width: 100%;
   }
   
   
@@ -753,6 +765,12 @@ ul{
     margin-bottom: 7%; /* Ensure proper margin between rows */
     padding-left: 15px; /* Align with the section's main margin */
     padding-right: 15px; /* Align with the section's main margin */
+}
+
+.border-item {
+  border: 2px solid #C89D65; /* Set the desired border color */
+  padding: 20px; /* Space between border and content */
+  margin-bottom: 20px; /* Space between items */
 }
 
 
