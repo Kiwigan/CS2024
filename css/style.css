@@ -705,13 +705,32 @@ ul{
   margin-bottom: 2%;
 }
 
+
+.large-icon {
+  font-size: 50px; /* Large icon size */
+  color: #C89D65; /* Icon color to match the theme */
+  justify-content: flex-start;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.knowledge-sub-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .knowledge-sub-line {
-  display: block; /* Make it a block element */
-  width: 20%; /* Adjust the width as needed */
-  height: 0.05px; /* Thickness of the line */
-  background-color: var(--white); /* Color of the line */
-  margin-top: 1%; /* Add top margin */
-  margin-bottom: 4%; /* Add bottom margin */
+  height: 2px;
+  width: 100%;
+  background-color: #C89D65;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.read-more i {
+  margin-left: 5px; /* Space between text and arrow */
 }
 
 /* Read more link styling */
@@ -767,10 +786,9 @@ ul{
     padding-right: 15px; /* Align with the section's main margin */
 }
 
-.border-item {
-  border: 2px solid #C89D65; /* Set the desired border color */
-  padding: 20px; /* Space between border and content */
-  margin-bottom: 20px; /* Space between items */
+.knowledge-icon {
+  color: #C89D65; /* Icon color to match the theme */
+  font-size: 20px; /* Adjust the size of the icons */
 }
 
 
@@ -1160,4 +1178,21 @@ accounting services
   background-color: var(--light-2); /* Line color */
   margin-top: 10px; /* Space between title and line */
   margin-bottom: 15px; /* Space between line and text */
+}
+
+
+/*Rating and reviews*/
+
+.card{
+  box-shadow: #555;
+}
+
+.user-content p{
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+.ratings i{
+  color: var(--primary);
 }
