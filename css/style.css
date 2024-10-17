@@ -603,7 +603,6 @@ ul{
   background-size: cover; /* This ensures the image covers the entire section */
   background-position: center; /* This centers the image */
   background-repeat: no-repeat; /* This prevents the image from repeating */
-  height: 120vh; /* Adjust height as needed */
   overflow: hidden; /* Ensure no overflow from the overlay */
   padding-top: 5%;
   padding-bottom: 5%;
